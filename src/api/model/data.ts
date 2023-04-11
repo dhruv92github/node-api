@@ -1,3 +1,4 @@
+import { error } from "console";
 
 const storage = require('node-persist');
 
@@ -33,6 +34,9 @@ export const findById = async(type : string, id : number)=>{
     try{
         const data = await storage.getItem(type)
         const databyID = data.find( item =>item.id === Number(id))
+        if (!databyID) {
+            throw error();
+        }
         return databyID;
 
     }catch{

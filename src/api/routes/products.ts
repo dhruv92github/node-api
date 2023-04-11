@@ -6,7 +6,7 @@ const router = express.Router();
 router.get('/', (req, res, next)=>{
     getAllData('products').then((data)=>{
         res.status(200).json({
-            message:'products',
+            message:'products fetched successfully!',
             data
         })
     })
@@ -51,6 +51,7 @@ router.post('/',(req, res, next)=>{
 
 router.delete('/:productId', (req, res, next)=>{
     let {productId} = req.params;
+    
     deleteDataById('products', productId).then(()=>{
         console.log('inside then delete');
         res.status(200).json({
