@@ -34,11 +34,11 @@ router.get('/:productId', (req, res, next)=>{
 router.post('/',(req, res, next)=>{
     // console.log('req: ', req);
     const {name, price} = req.body;
-
+    console.log(name,price);
     const product = {
-        id: Date.now(),
-        name,
-        price
+        productId: Date.now(),
+        productName:name,
+        price: Number(price)
     }
     addData('products', product).then(()=>{
         res.status(201).json({

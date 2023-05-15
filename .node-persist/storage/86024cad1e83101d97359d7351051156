@@ -1,1 +1,20 @@
-{"key":"products","value":[{"id":1678561839039,"name":"iphone 14 ","price":"1000"},{"id":1678562421459,"name":"iphone 14 pro max","price":"1500"},{"id":1678563064714,"name":"Mi note 9 pro","price":"600"},{"id":1678666276666,"name":"Mi note 10 pro","price":"700"}]}
+{
+  "key": "products",
+  "value": [
+    {
+      "id": 1681602303746,
+      "name": "Iphone 14 pro max",
+      "price": 1500
+    },
+    {
+      "id": 1681602360815,
+      "name": "Mi note 7 pro",
+      "price": 750
+    },
+    {
+      "id": 1681656723883,
+      "name": "One plus nord",
+      "price": 300
+    }
+  ]
+}
